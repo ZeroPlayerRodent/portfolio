@@ -1,5 +1,0 @@
-o_canada main []
-  apologize "Hello, World!"
-eh?
-
-please main []
