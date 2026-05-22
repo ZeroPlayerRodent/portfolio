@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Star Eater Web Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2 class="important"> Star Eater Web Demo </h2>
+        </div>
+        <div class="content" style="height:100%;">
+
+<iframe id="gamewindow" src="/portfolio/c64/c64.html?file=games/fish_easy.prg&joystick=digital_1" style="height:100%;width:100%;"></iframe> 
+
+
+
+        </div>
+        <div class="menu">
+          <h3>NOTICE</h3>
+          <p>This is the web demo version of the game.</p>
+          <p>The web demo may lag on older hardware/browsers.</p>
+          <p>Please be patient and wait for it to load.</p>
+          <a href="https://github.com/floooh/chips">(Emulator project page)</a>
+          <h3>HOW TO PLAY</h3>
+          <p>Press 'Space' key to start/restart game.</p>
+          <p>Press left and right arrows to move fish.</p>
+          <p>Press and hold 'up' arrow to charge a jump.</p>
+          <p>Release 'up' arrow to jump out of the water.</p>
+          <p>Collect stars and avoid helicopters and bombs.</p>
+          <h3>DIFFICULTY MODES</h3>
+          <button type="button" onclick="easygame()">Easy Mode</button>
+          <br>
+          <button type="button" onclick="normalgame()">Normal Mode</button>
+          <br>
+          <button type="button" onclick="hardgame()">Hard Mode</button>
+          <br>
+          <br>
+        </div>
+    </div>
+
+<script>
+
+function easygame() {
+  document.getElementById("gamewindow").src = "/portfolio/c64/c64.html?file=games/fish_easy.prg&joystick=digital_1";
+}
+
+function normalgame() {
+  document.getElementById("gamewindow").src = "/portfolio/c64/c64.html?file=games/fish_normal.prg&joystick=digital_1";
+}
+
+function hardgame() {
+  document.getElementById("gamewindow").src = "/portfolio/c64/c64.html?file=games/fish_hard.prg&joystick=digital_1";
+}
+
+</script>
+
+</body>
+
+</html>
