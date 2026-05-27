@@ -60,7 +60,7 @@ h2 {
   margin-right: 15%;
 }
 .container div {
-  background-color: grey;
+  background-color: lightgrey;
   border: solid;
 }
 .container div.header {
@@ -71,7 +71,7 @@ h2 {
 .container div.menu {
   padding-left: 5%;
   grid-area: menu;
-  background-color: grey;
+  background-color: lightgrey;
   height: 100%;
 }
 .container div.content {
